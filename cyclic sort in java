@@ -1,18 +1,22 @@
 public void cyclicsort {
-  public static void main(string[] args)
+  public static void main(string[] args){
+int[] arr = {5,3,2,1,4};
+sort(arr);
+system.out.println(arrays.tostring(arr));
+static void cyclic(int[] arr) {
+  int i = 0;
+while (i < arr.length) {
+int correct = arr[i] -1;
+if (arr[i] != arr[correct]) {
+swap(arr, i,correct);
+} else {
+i++;
 }
-static void sort(int[] arr) {
+}
+}
 
-int[] arr = {};
-cyclic(arr);
-system.out.println("arrays.tostring(arr));
-  }
-  static coid cyclic(int[] arr) {
-  for (int i = 0; i < arr.length - 1; i++) {
-for (int j = i+1; j > 0; j--){
-if (arr[j] < arr [j-1]) {
-swap(arr , j , second j - 1
-  
-
+  static void swap(int[] arr , int first, int second){
+int temp = arr[first];
+arr[first] = arr[second];
   
   
